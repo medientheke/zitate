@@ -1,0 +1,133 @@
+/*************************************************/
+/*        Fuer das MAINMENU                      */
+/*************************************************/
+
+
+/***********  *,html und body, ol, ul, li  *******************/
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  color: #444444; /*Standardwert der Schriftfarbe ist hier eingestellt*/
+  /*Schriftarten-gedoens*/
+    font-family: sans-serif; /*hab hier keine nicht-Standard-schriftart*/
+    font-weight: 400; /*die Strichdicke der Schriftart: 100 extraduenn - 900 extradick*/
+    /*font-display; optional; /*benoetigt bei mehreren nicht-standard Schriftarten und
+                              beschreibt den Umgang mit dessen Download bzw den fall-back-fonts*/
+    /*das Rendering von Text wird im folgenden geaendert. Costum-Fonts oder auch heller Text auf 
+     * dunklem Untergrund sieht duenner aus */
+    /* -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; */    
+}
+
+html{
+  /*overflow: hidden;*/  /*hidden sorgt dafuer, dass keine scrollleisten kommen*/
+}
+
+body{
+	/*Erscheinungsbild des Bodys*/
+    background: #ececec;
+	/*Anordnung der Elemente im Body*/
+		display: flex;
+    /*Reihenfolge der Elemente*/
+        flex-direction: column;
+    /*Verhalten der Elemente am Zeilenende*/
+        flex-wrap: wrap;
+    /*Abstaende/Anordnung der Elemente innerhalb einer Zeile*/
+        justify-content: flex-start;
+    /*Verhalten der Hoehen der Elemente innerhalb einer Zeile*/
+        align-items: stretch;
+    /*Abstaende/Verhalten der verschiedener Zeilen zueinander*/
+		align-content: stretch;
+}
+
+
+/*************  MAINMENU  **********************/
+
+.main{
+  /*groesse:*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+  /*Anordnung der Elemente im Header*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.main div div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    min-height: 50px;
+  /*width: 100px;
+  height: 100px;
+  overflow: hidden;*/
+}
+
+button{
+  min-height: 48px;
+  min-width: 48px;
+  width: 100%;
+}
+
+#settings-div{
+	/*Anordnung der Elemente im Header*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+	
+}
+#play-div{
+	/*Anordnung der Elemente im Header*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+	
+}
+#output-div{
+	/*Anordnung der Elemente im Header*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;	
+}
+
+
+/*************  Das Malfeld  **********************/
+
+#gemaelde-div{
+	/*width: 100%;*/
+	height: 100%;
+	flex-grow: 5;
+	/*Anordnung der Elemente im Header*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;	
+	
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+}
